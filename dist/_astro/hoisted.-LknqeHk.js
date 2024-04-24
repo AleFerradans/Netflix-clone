@@ -1,0 +1,1 @@
+const n=document.querySelectorAll(".accordion-content");n.forEach(e=>{let o=e.querySelector("button");o.addEventListener("click",()=>{e.classList.toggle("open");let t=e.querySelector("svg");e.classList.contains("open")?t.style.transform="rotate(45deg)":t.style.transform="rotate(0deg)"}),console.log(o)});
