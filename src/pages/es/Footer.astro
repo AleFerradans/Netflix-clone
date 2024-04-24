@@ -1,0 +1,105 @@
+---
+import LanguagePicker from "@components/LanguagePicker.astro";
+---
+<footer class="flex justify-start px-5 md:justify-center lg:justify-center lg:items-center items-center bg-black xs:items-start xs:h-auto xs:pb-5 h-auto md:h-auto pb-8 pt-6 lg:h-auto  md:px-8 overflow-hidden">
+
+    <div class="flex flex-col items-start gap-y-5 md:gap-y-6 w-[77%] md:w-full lg:w-[70%]">
+
+        <p class="text-[#b3b3b3] text-left xs:text-sm text-base">
+            Questions? Call <a class="underline" href="#" target="_blank" rel="noopener noreferrer">1 (408) 600-1722 (USA)</a>
+        </p>
+        <!-- Links  -->
+        <section class="grid grid-cols-2 md:grid-cols-4 xs:gap-x-28 gap-x-[8rem] md:gap-x-[5.5rem] lg:gap-x-[8rem]">
+            
+            <ul class="grid xs:gap-y-2 gap-y-4 mb-3 md:gap-y-3 w-[100%] text-[#b3b3b3] xs:text-xs text-sm lg:text-base underline">
+                <li>
+                    <a href="#" rel="noopener noreferrer">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Relaciones con inversionistas</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Privacidad</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Prueba de velocidad</a>
+                </li>
+            </ul>
+
+            <ul class="grid xs:gap-y-2 gap-y-4 mb-3 md:gap-y-3 text-[#b3b3b3] xs:text-xs text-sm lg:text-base underline">
+                <li>
+                    <a href="#" rel="noopener noreferrer">Centro de ayuda</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Empleo</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Preferencias de cookies</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Avisos legales</a>
+                </li>
+            </ul>
+
+            <ul class="grid xs:gap-y-2 gap-y-4 md:gap-y-3 text-[#b3b3b3] xs:text-xs text-sm lg:text-base underline">
+                <li>
+                    <a href="#" rel="noopener noreferrer">Cuenta</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Formas de ver</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Información corporativa</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Solo en Netflix</a>
+                </li>
+            </ul>
+
+            <ul class="flex flex-col xs:gap-y-2 gap-y-4 md:gap-y-3 text-[#b3b3b3] xs:text-xs text-sm lg:text-base underline">
+                <li>
+                    <a href="#" rel="noopener noreferrer">Prensa</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Términos de uso</a>
+                </li>
+                <li>
+                    <a href="#" rel="noopener noreferrer">Contáctanos</a>
+                </li>
+            </ul>
+
+        </section>
+
+        <button
+            class="text-white bg-[#111111bf] border border-[#5e5e5e] cursor-default focus:ring-2 focus:outline-1 focus:ring-white font-normal rounded-[4px] text-base xs:px-3 px-5 xs:py-0
+            5 py-1 sm:px-[14px] sm:py-1 md:py-[2px] text-center inline-flex items-center" type="button">
+
+            <img src="/public/language-icon.svg" alt="language-icon" class="size-6 pr-2 sm:pr-2 sm:w-6">
+        
+            <p class="sm:block">Español</p>
+
+            <i class="fa-solid fa-sort-down pl-2 sm:pl-4 pb-[2px] text-[10px]"></i>
+
+        </button>
+    
+        <!-- Dropdown menu -->
+        <div class="z-10 hidden bg-white divide-gray-100 rounded-lg shadow w-24 sm:w-32 cursor-default overflow-hidden">
+
+            <LanguagePicker />
+            <!-- <ul class="text-sm sm:text-base text-black overflow-hidden" >
+                <li>
+                    <a href="#" class="block text-center px-3 py-1 hover:bg-blue-700 hover:text-white cursor-default">Español</a>
+                </li>
+                <li>
+                    <a href="#" class="block text-center px-3 py-1 hover:bg-blue-700 hover:text-white cursor-default">English</a>
+                </li>     
+            </ul> -->
+
+        </div>
+
+        <p class="text-[#b3b3b3] xs:text-xs text-sm lg:text-base">Netflix Uruguay</p>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</footer>

@@ -1,0 +1,63 @@
+---
+import Language from '../components/Language.astro';
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+
+
+<main style=" background-image: linear-gradient(180deg, #000000e6, #0006, #000000e6), url(/hero-bg.jpg);
+background-position: center;
+background-position-y: 74%;
+background-position-x: 50%;"
+class="hero bg-cover sm:bg-[120%] 3xs:h-[80vh] xs:h-[75vh] md:h-[95vh] lg:h-[100vh] flex flex-col justify-start 3xs:gap-y-[16%] 2xs:gap-y-[14%] xs:gap-y-[10%] md:gap-y-[25%] items-center overflow-hidden">
+
+  <header id="header" class="flex items-center justify-around flex-wrap 3xs:gap-x-[18%] 2xs:gap-x-[30%] xs:gap-x-[33%] gap-x-[50%] sm:gap-x-[40%] md:gap-x-[52%] lg:gap-x-[58%] xl:gap-x-[32%]
+  w-full py-6 px-4">
+
+        <!-- Logo Netflix -->
+        <div id="logo">
+
+            <img src="./Netflix_logo.png" loading="lazy" alt="logo" class="3xs:w-[5.5rem] xs:w-[5.4rem] w-[5.5rem] md:w-[6rem] lg:w-[9.2rem]" />
+        
+        </div>
+        
+        <Language />
+
+    </header>
+
+    <!-- Email Section -->
+    <section class="flex justify-center items-center  w-full">
+        <div class="flex flex-col justify-center items-center gap-y-1 lg:gap-y-2 w-[95%]">
+
+          <div class="flex flex-col items-center justify-center xs:gap-y-2 gap-y-3 lg:gap-y-4 mb-1 w-[90%] sm:w-[90%]">
+
+            <h1 class="text-[32px] 3xs:text-2xl xs:text-3xl sm:text-3xl md:text-3xl lg:text-5xl text-center text-white leading-snug font-bold md:font-black md:leading-normal">Unlimited movies, TV shows, and more</h1>
+            <p class="3xs:text-base text-lg md:text-lg lg:text-2xl text-white font-weight[300]">Watch anywhere. Cancel anytime.</p>
+
+          </div>
+            
+          <section class="flex flex-col gap-y-4 md:gap-y-3 lg:gap-y-4 xs:mt-3 xs:w-[90%] w-full sm:w-[90%]">
+
+            <p class="3xs:text-sm xs:text-base text-lg text-center md:text-lg lg:text-xl  text-white font-weight[200]">Ready to watch? Enter your email to create or restart your membership.</p>
+        
+            <!-- Form -->
+            <form action="" class="flex flex-col sm:flex-row justify-center items-center gap-x-2 gap-y-4">
+            
+                <div class="relative">
+                  <input type="email" id="floating_filled" class="block rounded-[4px] px-3 pb-2.5 3xs:py-2.5 2xs:py-3 xs:py-3 py-5 sm:py-4 3xs:w-64 xs:w-96 w-[29rem] sm:w-80 md:w-[23rem] md:py-[18px] text-sm text-white bg-[#111212d7] border border-[#565656] appearance-none focus:border-white focus:outline-none focus:ring-0 peer" placeholder="" />
+                  <label for="floating_filled" class="absolute text-md text-[#bebebe] dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 3xs:top-2 xs:top-2.5 top-3 sm:top-3.5 md:top-4 z-10 origin-[0] start-4 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Email address</label>
+                </div>
+                <a class="inline-flex justify-center items-center text-white text-lg sm:text-2xl bg-[#e50914] rounded-[4px] 3xs:py-1 2xs:py-2 py-2 sm:py-2.5 3xs:px-3 2xs:px-4 px-4 md:py-3  md:px-7 hover:bg-[#c11119] transition duration-300 font-medium cursor-pointer"  type="submit">Get Started<i class="fa-solid fa-chevron-right text-[18px] pl-4"></i></a>
+            </form>
+        
+        </section>  
+
+
+        </div>
+       
+    </section>
+
+</main>

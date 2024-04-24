@@ -1,0 +1,158 @@
+---
+import Form from "./Form.astro";
+---
+
+<section class="flex flex-col items-center justify-center  
+bg-black py-10 w-full xl:gap-y-4">
+
+   <h2 class="text-white text-center tracking-wide 3xs:text-2xl 2xs:text-3xl w-[95%] md:text-5xl xl:text-[2.9rem] text-3xl font-bold md:font-extrabold leading-tight mb-2 mt-2">Frequently Asked Questions</h2>
+
+    <!-- Accordions Container -->
+    <div class="flex flex-col gap-y-[10px] 2xs:w-[83%] xs:w-[85%] w-[96%] md:w-[98%] lg:w-full xl:w-[77%] scale-95 xl:scale-100 md:mt-2">
+        
+        <div id="accordion-collapse" data-accordion="collapse">
+            
+            <!-- What is Netflix? -->
+            <h3 id="accordion-collapse-heading-1" class="accordion-content">
+            <button type="button" class="flex items-center justify-between w-full bg-[#2d2d2d] hover:bg-[#414141] transition-all duration-300 cursor-pointer rtl:text-right text-white
+            text-lg md:text-[26px] xl:text-2xl p-[22px] sm:p-4" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
+                <span class="text-white">What is Netflix?</span>
+                <svg class="text-white size-8 md:size-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="42" height="42" color="#000000" fill="none" >
+                <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            </h3>
+            <div id="accordion-collapse-body-1" class="hidden mt-[1px]" aria-labelledby="accordion-collapse-heading-1">
+            <div class="p-6 sm:p-5 md:p-7 bg-[#2d2d2d]">
+                <p class="leading-7 text-white text-[19px] sm:text-2xl md:text-[26px] xl:text-2xl md:leading-8">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.<br/> <br/>
+
+                You can watch as much as you want, whenever you want without a single commercial - all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+            </div>
+            </div>
+
+            <!-- How much does Netflix cost? -->
+            <h3 id="accordion-collapse-heading-2" class="accordion-content mt-[10px]">
+            <button type="button" class="flex items-center justify-between w-full bg-[#2d2d2d] hover:bg-[#414141] transition-all duration-300 cursor-pointer rtl:text-right text-white 
+            text-lg md:text-[26px] xl:text-2xl p-[22px] sm:p-5" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                <span class="text-white">How much does Netflix cost?</span>
+                <svg class="text-white size-8 md:size-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="42" height="42" color="#000000" fill="none" >
+                <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            </h3>
+            <div id="accordion-collapse-body-2" class="hidden mt-[1px]" aria-labelledby="accordion-collapse-heading-2">
+            <div class="p-6 sm:p-5 md:p-7 bg-[#2d2d2d]">
+                <p class="leading-7 text-white text-[19px] sm:text-2xl md:text-[26px] xl:text-2xl md:leading-8">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from USD 9.99 to USD 17.99 a month. No extra costs, no contracts.
+                </p>
+            </div>
+            </div>
+            <!-- Where can i watch? -->
+            <h3 id="accordion-collapse-heading-3" class="accordion-content mt-[10px]">
+            <button type="button" class="flex items-center justify-between w-full bg-[#2d2d2d] hover:bg-[#414141] transition-all duration-300 cursor-pointer  rtl:text-right text-white 
+            text-lg md:text-[26px] xl:text-2xl p-[22px] sm:p-5" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                <span class="text-white">Where can I watch?</span>
+                <svg class="text-white size-8 md:size-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="42" height="42" color="#000000" fill="none" >
+                <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            </h3>
+            <div id="accordion-collapse-body-3" class="hidden mt-[1px]" aria-labelledby="accordion-collapse-heading-3">
+            <div class="p-6 sm:p-5 md:p-7 bg-[#2d2d2d]">
+                <p class="leading-7 text-white text-[19px] sm:text-2xl md:text-[26px] xl:text-2xl md:leading-8">
+                    Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br/> <br/>
+
+                    You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </p>
+                
+            </div>
+            </div>
+
+            <!-- How do i cancel? -->
+            <h3 id="accordion-collapse-heading-3" class="accordion-content mt-[10px]">
+                <button type="button" class="flex items-center justify-between w-full bg-[#2d2d2d] hover:bg-[#414141] transition-all duration-300 cursor-pointer rtl:text-right text-white 
+                text-lg md:text-[26px] xl:text-2xl p-[22px] sm:p-5" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                    <span class="text-white">How do I cancel?</span>
+                    <svg class="text-white size-8 md:size-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="42" height="42" color="#000000" fill="none" >
+                    <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </h3>
+                <div id="accordion-collapse-body-4" class="hidden mt-[1px]" aria-labelledby="accordion-collapse-heading-4">
+                <div class="p-6 sm:p-5 md:p-7 bg-[#2d2d2d]">
+                    <p class="leading-7 text-white text-[19px] sm:text-2xl md:text-[26px] xl:text-2xl md:leading-8">
+                        Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.
+                    </p>
+                    
+                </div>
+                </div>
+
+                <!-- What can i watch on Netflix? -->
+            <h3 id="accordion-collapse-heading-3" class="accordion-content mt-[10px]">
+                <button type="button" class="flex items-center justify-between w-full bg-[#2d2d2d] hover:bg-[#414141] transition-all duration-300 cursor-pointer rtl:text-right text-white 
+                text-lg md:text-[26px] xl:text-2xl p-[22px] sm:p-5" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
+                    <span class="text-white">What can i watch on Netflix?</span>
+                    <svg class="text-white size-8 md:size-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="42" height="42" color="#000000" fill="none" >
+                    <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </h3>
+                <div id="accordion-collapse-body-5" class="hidden mt-[1px]" aria-labelledby="accordion-collapse-heading-5">
+                <div class="p-6 md:p-7 sm:p-5 bg-[#2d2d2d]">
+                    <p class="leading-7 text-white text-[19px] sm:text-2xl md:text-[26px] xl:text-2xl md:leading-8">
+                        Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                    </p>
+                    
+                </div>
+                </div>
+
+                <!-- Is Netflix good for kids? -->
+            <h3 id="accordion-collapse-heading-3" class="accordion-content mt-[10px]">
+                <button type="button" class="flex items-center justify-between w-full bg-[#2d2d2d] hover:bg-[#414141] transition-all duration-300 cursor-pointer rtl:text-right text-white 
+                text-lg md:text-[26px] xl:text-2xl p-[22px] sm:p-5" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6">
+                    <span class="text-white">Is Netflix good for kids?</span>
+                    <svg class="text-white size-8 md:size-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="42" height="42" color="#000000" fill="none" >
+                    <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </h3>
+                <div id="accordion-collapse-body-6" class="hidden mt-[1px]" aria-labelledby="accordion-collapse-heading-6">
+                <div class="p-6 sm:p-5 md:p-7 bg-[#2d2d2d]">
+                    <p class="leading-7 text-white text-[19px] sm:text-2xl md:text-[26px] xl:text-2xl md:leading-8">
+                        The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.<br/> <br/>
+
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                    </p>
+                    
+                </div>
+                </div>
+        </div>
+  
+        
+    </div>
+
+    <div class="2xs:mb-4 mb-8 mt-7 w-full">
+        <Form />
+    </div>
+
+</section>
+
+<script>
+    const accordionContent = document.querySelectorAll(".accordion-content");
+
+    accordionContent.forEach((item) => {
+        let header = item.querySelector("button");
+        header.addEventListener("click", () =>{
+            item.classList.toggle("open");
+            let icon = item.querySelector("svg");
+            if(item.classList.contains("open")){
+                icon.style.transform = "rotate(45deg)";
+            }else{
+                icon.style.transform = "rotate(0deg)"
+            }
+        })
+        console.log(header)
+    })
+</script>
+
+
+

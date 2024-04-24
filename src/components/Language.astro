@@ -1,0 +1,47 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import LanguagePicker from "./LanguagePicker.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="flex justify-center items-center gap-x-2 lg:gap-x-6">
+
+    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" 
+        class="inline-flex items-center justify-center text-white overflow-hidden bg-[#111111bf] border border-[#5e5e5e] cursor-default focus:ring-2 focus:outline-1 focus:ring-white font-normal rounded-[4px] text-base px-3.5
+        xs:py-1 xs:px-3  py-1.5 sm:px-4 md:px-6 md:py-1 lg:px-4.5 lg:py-1  sm:py-1 text-center" type="button">
+
+        <img src="./language-icon.svg" alt="language-icon" class="xs:size-5 size-5 sm:w-6 pr-1 sm:pr-2">
+    
+        <p class="hidden sm:block font-semibold">{ t('nav.language') }</p>
+
+        <i class="fa-solid fa-sort-down pl-2 sm:pl-4 pb-[2px] text-[10px]"></i>
+
+    </button>
+    
+    <!-- Dropdown menu -->
+    <div id="dropdown" class="z-10 hidden bg-white divide-gray-100 rounded-lg shadow xs:w-20 w-24 sm:w-32 cursor-default overflow-hidden">
+
+        <LanguagePicker/>
+
+    </div>
+
+
+    <!-- Sign In -->
+
+    <a href="#"
+    class="text-white bg-[#e50914] hover:bg-[#c11119] transition-all duration-200 flex justify-center items-center rounded-[4px] 3xs:text-sm 3xs:font-semibold 3xs:px-3 3xs:py-1.5
+    xs:py-1 xs:px-4 
+    sm:px-2.5 sm:py-1.5 sm:w-[45%]
+    md:px-1.5 md:py-1.5
+    lg:px-1.5 lg:py-1.5">Sign In</a>
+    
+</section>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+
